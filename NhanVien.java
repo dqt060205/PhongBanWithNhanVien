@@ -33,23 +33,22 @@ public class NhanVien {
     public String getTenNhanVien() {
         return this.tenNhanVien;
     }
-    public double getLuongCoBan() {
+    /*public double getLuongCoBan() {
         return this.luongCoBan;
-    }
+    }*/
     public double getHeSoLuong() {
         return this.heSoLuong;
     }
     // Hàm tăng lương
-    public boolean tangLuong(double heSoTang) {
+    /*public boolean tangLuong(double heSoTang) {
         if ((this.heSoLuong + heSoTang) * this.luongCoBan > LUONG_MAX) {
-            System.out.println("Khong the tang he so luong");
             return false;
         }
         else {
             this.setHeSoLuong(this.heSoLuong + heSoTang);
             return true;
         }
-    }
+    }*/
     // Hàm tính lương
     public double tinhLuong() {
         return this.luongCoBan * this.heSoLuong;
